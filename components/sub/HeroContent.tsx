@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import ProjectCard from "./ProjectCard";
 
 const HeroContent = () => {
   return (
@@ -46,10 +47,11 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack (Frontend heavy) Developer with experience in Web and
+          Mobile development. <a href="https://google.com">Check out my projects and skills.</a>
         </motion.p>
         <motion.a
+          href="#about-me"
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >

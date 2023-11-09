@@ -1,13 +1,15 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
-          href="#about-me"
+          href="/"
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
@@ -18,8 +20,8 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
+          <span className="font-bold ml-[5px] hidden md:block text-gray-300">
+            Bunde Uji
           </span>
         </a>
 
@@ -38,7 +40,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
+          <a href="https://github.com/bunde-uji" target="_blank"><FaGithub color="white" size={25} /></a>
+          <a href="https://github.com/bunde-uji" target="_blank"><FaLinkedin color="white" size={25} /></a>
+
+          {/* {Socials.map((social) => (
             <Image
               src={social.src}
               alt={social.name}
@@ -46,7 +51,7 @@ const Navbar = () => {
               width={24}
               height={24}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
